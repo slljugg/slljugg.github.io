@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div {
+      height: 300px;
+      width: 300px;
+      background-color:blue;
+    }
+    span {
+      border: 5px solid;
+      background:red;
+    }
+    .table {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .inline-block {
+      display: inline-block;
+      text-align: center;
+      line-height: 300px;
+    }
+    .position {
+      position: relative;
+      text-align: center;
+    }
+    .position > span {
+      position: absolute;
+      width: 40%;
+      height: 40%;
+      margin: auto;
+      padding:auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="table">
+    <span>table</span>
+  </div>
+  <br>
+  <br>
+  <div class="inline-block">
+    <span>inline-block</span>
+  </div>
+  <br>
+  <br>
+  <div class="position">
+    <span>position</span>
+  </div>
+</body>
+</html>

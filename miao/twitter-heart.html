@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TWITTER HEART</title>
+    <style>
+        input {
+            display: none;
+        }
+        input + label {
+            cursor: pointer;
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-image: url(https://abs.twimg.com/a/1557861269/img/animations/web_heart_animation_edge.png);
+        }
+        input:checked + label {
+            background-position: -2800px 0;
+            transition: background-position 0.8s steps(28);
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            cursor: pointer;
+            background-image: url(https://abs.twimg.com/a/1557861269/img/animations/web_heart_animation_edge.png);
+        }
+        div:hover {
+            background-position: -2800px 0;
+            transition: background-position 0.6s steps(28);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="click">
+    <label for="click"></label>
+    <div>
+    </div>
+</body>
+</html>

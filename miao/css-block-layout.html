@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS-BLOCK-LAYOUT</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        background-color:black;
+      }
+      header p {
+        color: white;
+        width: 600px;
+        margin: auto;
+      }
+      div.sec {
+        width: 600px;
+        margin: 15px auto;
+      }
+      section {
+        width: 600px;
+        margin-bottom: 16px;
+      }
+      .box ul { 
+        width: 600px;
+        padding: 0;
+        margin: 0;
+      }
+      .box ul li {
+        box-sizing: border-box;
+        background-color:rgb(255, 192, 203);
+        width: 180px;
+        height: 40px;
+        border: 3px solid black;
+        text-align: center;
+        margin-bottom: 15px;
+        line-height: 34px;
+        list-style-type: none
+      }
+      .box ul li:nth-child(3n+2) {
+        margin-left: 210px;
+        margin-top: -55px;
+      }
+      .box ul li:nth-child(3n+3) {
+        margin-left: 420px;
+        margin-top: -55px;
+      }
+      .box ul li:hover{
+        background-color:red;
+      }
+      .link ul {
+        padding: 0;
+        margin: 0;
+      }
+      .link ul li {
+        margin: 0;
+        border-bottom: 1px dotted #000;
+        list-style-type: none
+      }
+      .link ul li:last-child{
+        margin: 0;
+        border: none;
+        list-style-type: none
+      }
+      footer {
+        margin-top: 16px;
+        padding:0;
+        color: black;
+        background-color: rgb(238, 130 , 238);
+      }
+      footer p {
+        padding: 0;
+        margin:0;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <p>hello world 请调整浏览器窗口大小查看效果</p>
+  </header>
+    <div class="sec">
+      <section>
+        页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+      </section>
+      <div class="box">
+        <ul>
+          <li>宽180高40(包含边框)</li>
+          <li>产品</li>
+          <li>产品</li>
+          <li>水平间隙30px</li>
+          <li>产品</li>
+          <li>产品</li>
+          <li>垂直间隙15px</li>
+          <li>产品</li>
+          <li>产品</li>
+          <li>边框宽度3px</li>
+          <li>产品</li>
+          <li>产品</li>
+        </ul>
+      </div>
+      <div class="link">
+        <ul>
+          <li>link</li>
+          <li>link</li>
+          <li>link</li>
+          <li>link</li>
+          <li>link</li>
+        </ul>
+      </div>  
+    </div>
+    <footer>
+        <p>&copy;版权所有</p>
+        <p>本页所有布局均使用块元素</p>
+    </footer>
+</body>
+</html>

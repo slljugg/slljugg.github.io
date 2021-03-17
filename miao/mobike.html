@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      padding: 0;
+    }
+    .datu {
+      width: 100%;
+      height: 762px;
+      background: url(https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-4.jpg);
+      background-size: cover;
+      position: relative;
+      background-position: center center;
+    }
+    .datu a:first-child {
+      margin: 20px;
+      padding-left: 255px;
+      display: block;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      position: absolute;
+      font-size: 20px;
+    }
+    .datu span {
+      margin:20px;
+      color: white;
+      position: relative;
+      display: inline-block;
+      font-size: 16px;
+      float:right;
+    }
+    .datu span:nth-child(2){
+      margin-right: 200px;
+    }
+    h1{
+      color: white;
+      display: block;
+      position: absolute;
+      height: 80px;
+      margin: auto;
+      top:0;
+      bottom: 0;
+      left: 200px;
+      font-size: 70px;
+    }
+    .datu a:nth-child(7) {
+      display: block;
+      font-size: 30px;
+      background-color: rgba(41,41,41,0.4);
+      color: white;
+      position: absolute;
+      top:440px;
+      left: 200px;
+      text-decoration: none;
+      line-height: 30px;
+      padding: 20px;
+      border-radius: 5px; 
+    }
+    .datu a:nth-child(7):hover {
+      background-color: rgba(9,9,9,0.6);
+    }
+     section {
+       overflow: hidden;
+       width: 100%;
+     }
+    .xiaotu {
+      width: 100%;
+      display:flex;
+      padding: 2px;
+      flex-wrap: wrap;
+      background-color: white;
+      margin-left: -4px;
+      margin-right: -4px;
+    }
+    .xiaotu div {
+      width: 25%;
+      height: 260px;
+      background-size: cover;
+      border: 2px solid white;
+      box-sizing: border-box;
+      background-position: center center;
+    }
+    .xiaotu .a {
+      background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg);
+    }
+    .xiaotu .b {
+      background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg);
+    }
+    .xiaotu .c {
+      background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg);
+    }
+    .xiaotu .d {
+      background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-04.jpg);
+    }
+    @media (max-width: 1065px) {
+      div.datu {
+        height: 525px;  
+        width: 100%;
+        background-size: cover;
+      }
+    }
+    @media (max-width: 1065px) {
+      div.xiaotu div {
+        width: 50%;
+      }
+    }
+    @media (max-width: 625px) {
+      div.xiaotu div {
+        width: 100%;
+      }
+    }
+  </style>  
+</head>
+<body>
+  <div class="datu">
+    <a href="">mobike <br>膜拜单车</a>
+    <span>广告合作</span>
+    <span>关于</span>
+    <span>膜拜科技</span>
+    <span>产品</span>
+    <h1>让自行车回归城市</h1>
+    <a href="https://android.myapp.com">立即使用mobike</a>
+  </div>
+  <section>
+    <div class="xiaotu">
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+      <div class="d"></div>
+    </div>
+ </section>
+</body>
+</html>

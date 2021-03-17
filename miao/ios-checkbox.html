@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .bottom {
+  position: relative;
+  
+  width: 320px;
+  height: 200px;
+  border:1px solid transparent;
+  border-radius: 150px;
+
+  display: block;
+  box-shadow: 0 0 0 0 rgb(110,221,94) inset;
+  background-color:rgb(110,221,94);
+  transition: .6s;
+}
+.tick {
+  position:relative;
+  margin-left:5px;
+  margin-top:9px;
+  
+  width:180px;
+  height: 180px;
+  border-radius: 90px;
+  border:1px solid transparent;
+  background-color:rgb(255,255,255);
+  transition: .6s;
+}
+input {
+  display:none;
+}
+#check:checked + label {
+  background-color:rgb(221,221,221);
+  box-shadow: 0 0 0 100px rgb(110,221,94) inset;
+  
+} 
+#check:checked + label div {
+ margin-left: 133px;
+}
+  </style>
+</head>
+<body>
+  <input type="checkbox" id="check">
+  <label for="check" class="bottom">
+    <div class="tick"></div>
+  </label>
+</body>
+</html>

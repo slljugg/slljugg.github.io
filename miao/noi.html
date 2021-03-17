@@ -1,0 +1,1316 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div><pre id="test-result" style="column-width: 100px"></pre></div> -->
+  <script type="x" id="ch0103/01">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+  
+    var c = a + b
+  
+    console.log(c)
+  </script>
+  
+  <script type="x" id="ch0103/02">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    var c = Number(prompt("please input c ="))
+  
+    var d = (a + b) * c
+  
+    console.log(d)
+  </script>
+  
+  <script type="x" id="ch0103/03">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    var c = Number(prompt("please input c ="))
+  
+    var d = (a + b) / c | 0
+  
+    console.log(d)
+  </script>
+  
+  <script type="x" id="ch0103/04">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+  
+    var c =(a / b) | 0
+    var d =a % b
+  
+    console.log(c)
+    console.log(d)
+  </script>
+  
+  <script type="x" id="ch0103/05">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    
+    var c =a / b
+    var d =c.toFixed(9)
+  
+    console.log(d)
+  </script>
+  
+  <script type="x" id="ch0103/06">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+  
+    var c =b / a
+    var d =c.toFixed(5)
+    var f =d * 100 + "%"
+  
+    console.log(f)
+  </script>
+  
+  <script type="x" id="ch0103/07">
+    var x = Number(prompt("please input x ="))
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    var c = Number(prompt("please input c ="))
+    var d = Number(prompt("please input d ="))
+    
+  
+    var f = (a * x * x * x) + (b * x * x) + (c * x) + d
+    var g = f.toFixed(7)
+  
+    console.log(g)
+  </script>
+  
+  <script type="x" id="ch0103/08">
+    var f = Number(prompt("please input f ="))
+  
+    var c = 5 * (f - 32) / 9
+    var a = c.toFixed(5)
+  
+    console.log(a)
+  </script>
+  
+  <script type="x" id="ch0103/09">
+    var r = Number(prompt("please input r ="))
+    var pi = Math.PI
+  
+    var b = 2 * r
+    var c = b * pi.toFixed(5)
+    var d = pi.toFixed(5) * r * r
+  
+    console.log(b.toFixed(4))
+    console.log(c.toFixed(4))
+    console.log(d.toFixed(4))
+  </script>
+  
+  <script type="x" id="ch0103/10">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+  
+    var c = (a * b) / (a + b) 
+  
+    console.log(c.toFixed(2))
+  </script>
+  
+  <script type="x" id="ch0103/11">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+  
+    var c = a % b 
+  
+    console.log(c.toFixed(4))
+  </script>
+  
+  <script type="x" id="ch0103/12">
+    var r = Number(prompt("please input r ="))
+    var pi = Math.PI
+  
+    var c = 4 * pi.toFixed(2) * r * r * r / 3
+  
+    console.log(c.toFixed(2))
+  </script>
+  
+  <script type="x" id="ch0103/13">
+    var n = Number(prompt("please input n ="))
+    
+    var a = n / 100 | 0
+    var b = (n / 10 | 0) - a * 10
+    var c = n - (a * 100) - (b * 10)
+  
+    console.log(c + "" + b + "" + a)
+  </script>
+  
+  <script type="x" id="ch0103/14">
+    var h = Number(prompt("please input h ="))
+    var r = Number(prompt("please input r ="))
+    var pi = Math.PI
+  
+    var a = pi * r * r * h
+    var b = 20000 / a 
+    var c = 20000 / a | 0
+    var d = c + 1
+    if (b > c)
+    console.log(d)
+    else
+    console.log(c)
+  </script>
+  
+  <script type="x" id="ch0103/15">
+    var n = Number(prompt("please input n ="))
+    var x = Number(prompt("please input x ="))
+    var y = Number(prompt("please input y ="))
+  
+    var a = y / x | 0
+    var b = y / x
+    var c = n - a
+    var d = n - a - 1
+    if (b == a)
+    console.log(c)
+    else
+    console.log(d)
+  </script>
+  
+  <script type="x" id="ch0103/16">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    var c = Number(prompt("please input c ="))
+    var d = Number(prompt("please input d ="))
+    
+    var e = (c - a) * (c - a) + (d - b) * (d - b)
+    var f = Math.sqrt(e)
+  
+    console.log(f.toFixed(3))
+  </script>
+  
+  <script type="x" id="ch0103/17">
+    var x1 = Number(prompt("please input x1 ="))
+    var y1 = Number(prompt("please input y1 ="))
+    var x2 = Number(prompt("please input x2 ="))
+    var y2 = Number(prompt("please input y2 ="))
+    var x3 = Number(prompt("please input x3 ="))
+    var y3 = Number(prompt("please input y3 ="))
+    
+    var a = (1/2)*(x1 * y2 + x2 * y3 + x3 * y1 - x1 * y3 - x2 * y1 - x3 * y2)
+  
+    console.log(a.toFixed(2))
+  </script>
+  
+  <script type="x" id="ch0103/18">
+    var a1 = Number(prompt("please input a1 ="))
+    var a2 = Number(prompt("please input a2 ="))
+    var n = Number(prompt("please input n ="))
+  
+    var a = (a2 - a1) * (n - 1) + a1
+  
+    console.log(a)
+  </script>
+  
+  <script type="x" id="ch0103/19">
+    var a1 = Number(prompt("please input a1 ="))
+    var a2 = Number(prompt("please input a2 ="))
+  
+    var a = (a1 * a2)
+  
+    console.log(a)
+  </script>
+  
+  <script type="x" id="ch0103/20">
+    var n = Number(prompt("please input n ="))
+  
+    var a = Math.pow(2,n)
+  
+    console.log(a)
+  </script>
+  
+  <script type="x" id="ch0104/01">
+    var N = Number(prompt("please input N ="))
+    if (N > 0) {
+      console.log('positive')
+    } else if (N < 0) {
+      console.log('negative')
+    } else {
+      console.log('zero')
+    }
+  </script>
+  
+  <script type="X" id="ch0104/02">
+    var N = Number(prompt("please input N ="))
+    if (N >= 0) {
+      console.log(N)
+    } else if (N < 0) {
+      console.log(-N)
+    }
+  </script>
+  
+  <script type="x" id="ch0104/03">
+    var n = Number(prompt("please input N ="))
+    if (n % 2) {
+      console.log("odd")
+    } else {
+      console.log("even")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/04">
+    var n = prompt("please input n =")
+    if ( n.charCodeAt() % 2 ) {
+      console.log("YES")
+    } else {
+      console.log("NO")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/05">
+    var X = Number(prompt("please input X ="))
+    var Y = Number(prompt("please input Y ="))
+    if (X > Y) {
+      console.log(">")
+    } else if (X < Y) {
+      console.log("<")
+    }else{
+      console.log("=")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/06">
+    var n = Number(prompt("please input n ="))
+    var a = n / 100 
+    if (a >= 1) {
+      console.log("0")
+    } else{
+      console.log("1")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/07">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    if (a >= 10 || b >=20) {
+      console.log("1")
+    } else{
+      console.log("0")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/08">
+    var n = Number(prompt("please input n ="))
+    
+    if (n % 5 == 0 && n % 3 == 0) {
+      console.log("YES")
+    } else{
+      console.log("NO")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/09">
+    var n = Number(prompt("please input n ="))
+    
+    if (n % 3 == 0 && n % 5 == 0 && n % 7 == 0) {
+      console.log("3 5 7")
+    } else if (n % 3 == 0 && n % 5 == 0 && n % 7 != 0) {
+      console.log("3 5")
+    } else if (n % 3 == 0 && n % 5 != 0 && n % 7 == 0) {
+      console.log("3 7")
+    } else if (n % 3 != 0 && n % 5 == 0 && n % 7 == 0) {
+      console.log("5 7")
+    } else if (n % 3 == 0 && n % 5 != 0 && n % 7 != 0) {
+      console.log("3")
+    } else if (n % 3 != 0 && n % 5 == 0 && n % 7 != 0) {
+      console.log("5")
+    } else if (n % 3 != 0 && n % 5 != 0 && n % 7 == 0) {
+      console.log("7")
+    } else if (n % 3 != 0 && n % 5 != 0 && n % 7 != 0) {
+      console.log("n")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/10">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+  
+    if (a < 60 || b < 60) {
+      console.log("1")
+    } else{
+      console.log("0")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/11">
+    var n = Number(prompt("please input n ="))
+  
+    if (n != 1 && n != 3 && n != 5) {
+      console.log("YES")
+    } else{
+      console.log("NO")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/12">
+    var a = Number(prompt("please input a ="))
+    var b = a / 3 + 50
+    var c = a / 1.2
+  
+    if (b < c) {
+      console.log("Bike")
+    } else if (b > c){
+      console.log("Walk")
+    } else {
+      console.log("ALL")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/13">
+    var x = Number(prompt("please input x ="))
+  
+      if (x >= 0 && x < 5) {
+        var y = -x + 2.5
+      } else if (5 <= x && x < 10) {
+        var y = 2 - 1.5 * (x - 3) * (x - 3)
+      } else if (10 <= x && x < 20) { 
+        var y = x / 2 - 1.5
+      }
+    console.log(y.toFixed(3))
+  </script>
+  
+  <script type="x" id="ch0104/14">
+    var a = Number(prompt("please input a ="))
+    var b = prompt("please input b =")
+  
+    if (b == "y") {
+      if (a <= 1000) {
+        console.log(8 + 5)
+      } else {
+        var c = Math.ceil((a - 1000) / 500) * 4
+        console.log(c + 13)
+      } 
+    } else if (b == "n") {
+      if (a <= 1000) {
+        console.log(8)
+      } else {
+        var c = Math.ceil((a - 1000) / 500) * 4
+        console.log(c + 8)
+      } 
+    }
+  </script>
+  
+  <script type="x" id="ch0104/15">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    var c = Number(prompt("please input c ="))
+  
+    if (a >= b) {
+      if (a >= c){
+        console.log(a)
+      }else {
+        console.log(c)
+      }
+    } else if (a < b) {
+      if (b >= c){
+        console.log(b)
+      }else {
+        console.log(c)
+      }
+    }
+  </script>
+  
+  <script type="x" id="ch0104/16">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    var c = Number(prompt("please input c ="))
+  
+    if (a + b > c && a + c > b && b + c > a) {
+      if (a - b < c && a - c < b && b - c < a) {
+        console.log("yes")
+      } else{
+        console.log("no")
+      }
+    } else{
+      console.log("no")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/17">
+    var a = Number(prompt("please input a ="))
+  
+    if (a % 4 == 0) {
+      if (a % 100 == 0 && a % 400 != 0 || a % 3200 == 0) {
+        console.log("N")
+      } else {
+        console.log("Y")
+      }
+    }else {
+      console.log("N")
+    }
+  </script>
+  
+  <script type="x" id="ch0104/18">
+    var x = Number(prompt("please input x ="))
+    var y = Number(prompt("please input y ="))
+   
+   if (x * x <= 1) {
+     if (y * y <= 1) {
+       console.log("yes")
+     } else {
+       console.log("no")
+     }
+   } else {
+     console.log("no")
+   }
+  </script>
+  
+  <script type="x" id="ch0104/19">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    var c = prompt("please input c =")  
+  
+    if (c == "+") {
+      console.log(a + b)
+    } else {
+      if (c == "-") {
+        console.log(a - b)
+      }else {
+        if (c == "*") {
+          console.log(a * b)
+        } else {
+           if (c == "/" && b == 0) {
+             console.log("Divided by zero!")
+           }else {
+             if (c =="/" && b != 0) {
+               console.log("Invalid operator!")
+             }
+           }
+        } 
+      }
+    }
+  </script>
+  
+  <script type="x" id="ch0104/20">
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    var c = Number(prompt("please input c ="))
+  
+    if(a != 0){
+      if( b * b - 4 * a * c == 0){
+          var x1 = x2 = ( - b / (2 * a)).toFixed(5)
+          console.log("x1=x2="+x1);
+        }else if( b * b - 4 * a * c > 0){
+          var x1 = (- b / (2 * a) + Math.sqrt(b * b - 4 * a * c)/ (2*a)).toFixed(5)
+          var x2 = (- b / (2 * a) - Math.sqrt(b * b - 4 * a * c)/ (2*a)).toFixed(5)
+          if(Math.abs(x1) < Math.abs(x2)){
+            console.log("x1="+x1 + ";x2="+x2) 
+          }else{
+            console.log("x1="+x2 + ";x2="+x1)
+          }
+        }else{
+          var x1 = (- b / (2 * a)).toFixed(5) + "+" + (Math.sqrt(4 * a * c - b * b )/ (2*a)).toFixed(5) + "i";
+          var x2 = (- b / (2 * a)).toFixed(5) + "-" + (Math.sqrt(4 * a * c - b * b )/ (2*a)).toFixed(5) + "i";
+          console.log("x1="+x1 + ";x2="+x2)
+        }
+    }
+  </script>
+  
+  <script type="x" id="ch0104/21">
+    var n = Number(prompt("please input n ="))
+    var x = Number(prompt("please input x ="))
+    var y = Number(prompt("please input y ="))
+    
+    var a =Math.ceil(y / x)
+    
+    console.log(n - a)
+  </script>
+  
+  <script type="x" id="ch0105/01">
+    var n = Number(prompt("please input n ="))
+    var sum = 0
+     for (var i = 1; i <= n; i++) {
+       var age =Number(prompt("please input age ="))
+       sum = sum + age
+     }
+    
+    console.log((sum / n).toFixed(2))
+  </script>
+  
+  <script type="x" id="ch0105/02">
+    var sum = 0
+     for (var i = 1; i <= 12; i++) {
+       var s =Number(prompt("please input s ="))
+       sum = sum + s  
+     }
+    console.log("$" + (sum / 12).toFixed(2))
+  </script>
+  
+  <script type="x" id="ch0105/03">
+    var n =Number(prompt("please input n ="))
+    var sum = 0
+    for (var i = 1; i <= n; i++) {
+       var a =Number(prompt("please input a ="))
+       sum = sum + a  
+     }
+    console.log((sum / n).toFixed(4))
+  </script>
+  
+  <script type="x" id="ch0105/04">
+    var n =Number(prompt("please input n ="))
+    var sum = 0
+  
+    for (var i = 1; i <= n; i++) {
+       var a =Number(prompt("please input a ="))
+       sum = sum + a  
+     }
+  
+    console.log(sum)
+    console.log((sum / n).toFixed(5))
+  </script>
+  
+  <script type="x" id="ch0105/05">
+    var n =Number(prompt("please input n ="))
+    var a =Number(prompt("please input a ="))
+  
+    var max = a
+    
+    for (var i = 2; i <= n; i++) {
+      var a =Number(prompt("please input a ="))
+      if (a >= max) {
+        max = a
+      } else {
+        max = max
+      }
+     }
+  
+    console.log(max)
+  </script>
+  <script type="x" id="ch0105/06">
+    var n =Number(prompt("please input n ="))
+    var score =Number(prompt("please input score ="))
+      var max = score
+      var min = score
+      for (var i = 2;i <= n; i++)  {
+        var score =Number(prompt("please input score ="))
+          if(score >= max) {
+              max = score
+          }
+          else if (score < min) {
+              min = score
+          }
+      }
+  
+  console.log(max - min)
+  </script>
+  
+  <script type="x" id="ch0105/07">
+    var n =Number(prompt("please input n ="))
+    
+    var sum1 = 0
+    var sum2 = 0
+    var sum3 = 0
+  
+      for (var i = 1; i <= n; i++)  {
+        var a =Number(prompt("please input a ="))
+        var b =Number(prompt("please input b ="))
+        var c =Number(prompt("please input c ="))
+        
+        sum1 = sum1 + a
+        sum2 = sum2 + b
+        sum3 = sum3 + c
+    }
+    console.log(sum1)
+    console.log(sum2)
+    console.log(sum3)
+    console.log(sum1 + sum2 + sum3)
+  
+  </script>
+  
+  <script type="x" id="ch0105/08">
+    var n =Number(prompt("please input n ="))
+    
+      var b = (n - 2) * 180
+      var d = 0
+      for (var i = 1; i <= (n - 1); i++) {
+        var c =Number(prompt("please input c ="))
+        d = d + c
+    }
+  console.log(b - d)
+  </script>
+  
+  <script type="x" id="ch0105/09">
+    var a =Number(prompt("please input a ="))
+    var b =Number(prompt("please input b ="))
+  
+    var sum = 0
+    for (var i = a; i <= b; i++ ) {
+      if (i % 2 != 0) {
+        sum = sum + i
+      }
+    }
+    
+  console.log(sum)
+  </script>
+  
+  <script type="x" id="ch0105/10">
+    var m =Number(prompt("please input m ="))
+    var n =Number(prompt("please input n ="))
+  
+    var sum = 0
+    for (var i = m; i <= n; i++ ) {
+      if (i % 17 == 0) {
+        sum = sum + i
+      }
+    }
+    
+  console.log(sum)
+  </script>
+  
+  <script type="x" id="ch0105/11">
+    var n =Number(prompt("please input n ="))
+  
+    var a = 0
+    var b = 0
+    var c = 0
+  
+    for (var i = 1; i <= n; i++ ) {
+      var d =Number(prompt("please input d ="))
+      if (d == 1) {
+        a = a + 1
+      }
+      if (d == 5) {
+        b = b + 1
+      }
+      if (d == 10) {
+        c = c + 1
+      }
+    }
+    
+  console.log(a)
+  console.log(b)
+  console.log(c)
+  </script>
+  
+  <script type="x" id="ch0105/12">
+    var n =Number(prompt("please input n ="))
+    var m =Number(prompt("please input m ="))
+  
+    var a = 0
+    for (var i = 1; i <= n; i++ ) {
+      var b =Number(prompt("please input b ="))
+      if (b == m) {
+        a = a + 1
+      }
+    }
+    
+  console.log(a)
+  </script>
+  
+  <script type="x" id="ch0105/13">
+    var a =Number(prompt("please input a ="))
+    var n =Number(prompt("please input n ="))
+  
+    var b = a
+    for (var i = 2; i <= n; i++ ) {
+      b = b * a
+    }
+  console.log(b)
+  </script>
+  
+  <script type="x" id="ch0105/14">
+    var a =Number(prompt("please input a ="))
+    var n =Number(prompt("please input n ="))
+  
+    var sum = 13
+    for (var i = 1; i <= n; i++ ) {
+      sum = sum + (sum * 0.001)
+    }
+  
+  console.log(sum.toFixed(4))
+  </script>
+  
+  <script type="x" id="ch0105/15">
+    var r =Number(prompt("please input r ="))
+    var m =Number(prompt("please input m ="))
+    var y =Number(prompt("please input y ="))
+  
+    var sum = 5000
+    for (var i = 1; i <= y; i++ ) {
+      sum = sum + (sum * (r / 100))
+    }
+  
+  console.log(Math.floor(sum))
+  </script>
+  
+  <script type="x" id="ch0105/16">
+    var n =Number(prompt("please input n ="))
+    var k =Number(prompt("please input k ="))
+  
+    var price = 200
+  
+    if (n >= 200) {
+      console.log(1)
+    }
+    else {
+      var year
+      for (var i = 2; i < 10000; i++) {
+        price = price + price * k / 100
+        var sum = n * i
+        if (sum >= price) {
+          year = i
+          break
+        }
+      }
+      if (year <= 20) {
+        console.log(year)
+      }else {
+        console.log ('Imposible')
+      }
+    }
+  </script>
+  
+  <script type="x" id="ch0105/17">
+    var k =Number(prompt("please input k ="))
+  
+    var before = 1
+    var after = 1
+  
+    for (var i = 3; i <= k; i++ ) {
+      var sum = after
+      after = after + before
+      before = sum
+    }
+  console.log(after)
+  </script>
+  
+  <script type="x" id="ch0105/18">
+  
+    var n = Number(prompt("please input n ="))
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+  
+    var before = b / a
+  
+    for (var i = 2; i <= n; i++ ) {
+      var a = Number(prompt("please input a ="))
+      var b = Number(prompt("please input b ="))
+      var after = b / a
+      if (after > before + 0.05) {
+        console.log('better')
+      }
+      else if (after < before - 0.05) {
+        console.log('worse')
+      }
+      else {
+        console.log('same')
+      }
+    } 
+  </script>
+  
+  <script type="x" id="ch0105/19">
+    var n = Number(prompt("please input n ="))
+  
+    for (var i = 1; i <= n; i++ ) {
+      var x = Number(prompt("please input x ="))
+      var y = Number(prompt("please input y ="))
+      var a = Number(prompt("please input a ="))
+      var b = Math.sqrt(x **2 + y ** 2)
+      var t = 1.5 * a + b / 25
+    }
+  console.log(Math.ceil(t))
+  </script>
+
+  <script type="x" id="ch0105/20">
+    var h = Number(prompt("please input h ="))
+
+    var sum = 0
+
+    for (var i = 1; i <= 10; i++ ) {
+      var c = h
+      h = h / 2
+      sum = sum + h + c
+    }
+  console.log((sum - h).toFixed(4))
+  console.log((h).toFixed(7))
+  </script>
+
+<script type="x" id="ch0105/21">
+  var n = Number(prompt("please input n ="))
+  while (n !== 1) {
+    if (n % 2 !== 0) {
+      var c = n
+      n = n * 3 + 1
+      console.log(c + '*3+1=' + n)
+    }
+    if (n % 2 == 0) {
+      var d = n
+      n = n / 2
+      console.log(d + '/2=' +n)
+    }
+  }
+    console.log("End")
+</script>
+
+<script type="x" id="ch0105/22">
+  var m = 0
+    var n = 0
+    var b = 0
+    var B = 1
+    for(var i = 1;i <= 12;i ++){
+        var a = + prompt()
+        m = m + 300
+        if(m >= a){
+            n = Math.trunc((m - a) / 100) * 100
+            m = m - a - n
+            b = b + n
+        }else{
+            var X = -i
+            B = 0
+        }
+    }
+    if(B == 1){
+        b = b * 1.2 + m
+        console.log(b)
+    }else if(B == 0)
+    console.log(X)
+</script>
+
+<script type="x" id="ch0105/23">
+  var m = Number(prompt("please input m ="))
+  var n = Number(prompt("please input n ="))
+  var k = 0
+  for (var i = 1; i <= n; i++) {
+    var a = Number(prompt("please input a ="))
+    if (m - a < 0) {
+      k = k + 1
+    } else {
+      m = m - a
+    }
+  }
+  console.log(k)
+</script>
+
+
+<script type="x" id="ch0105/24">
+  var n = Number(prompt("please input n ="))
+  var k = 0
+
+  for (var i = 1; i <= n; i++) {
+    var a = Number(prompt("please input a ="))
+    var b = Number(prompt("please input b ="))
+    if (a >= 90 && a <=140 &&(b >= 60 && b <= 90)) {
+      k = k + 1
+    } else {
+      k = 0
+    }
+  }
+  console.log(k)
+</script>
+
+<script type="x" id="ch0105/25">
+  for(var n = 49;n <= (9*9*9-1);n ++){
+    var seven1 = n % 7
+    var seven2 = (n - seven1) / 7 % 7
+    var seven3 = ((n - seven1) / 7 - seven2) / 7 % 7
+    var nine1 = n % 9
+    var nine2 = (n - nine1) / 9 % 9
+    var nine3 = ((n - nine1) / 9 - nine2) / 9 % 9
+    if(seven1 == nine3 && seven2 == nine2 && seven3 == nine1){
+        console.log(''+n,''+seven3+seven2+seven1,''+nine3+nine2+nine1)
+    }
+}
+// eg: 128 / 6 = 21 ... 2
+// eg: 21 / 6 = 3 ... 3
+// eg: 3 / 6 = 0 ... 3
+// 128 => 332
+</script>
+
+<script type="x" id="ch0105/26">
+  var n = Number(prompt("please input n ="))
+
+  var k = 0
+   for (var i = 1; i <= n; i++) {
+    var a = Number(prompt("please input a ="))
+      var unit = a % 10
+      var ten = Math.floor(a % 100 / 10)
+      var hundred = Math.floor(a % 1000 / 100)
+      var thousand = Math.floor(a / 1000)
+      if((unit - ten - hundred - thousand) > 0) {
+          k = k + 1 
+      }
+   }
+   console.log(k)
+</script>
+
+<script type="x" id="ch0105/27">
+  var k = Number(prompt("please input k ="))
+  var i = 1
+  var n = 0
+  var sum = 0
+
+  while (sum < k) {
+    sum = sum + 1 / i
+    i++
+  }
+  console.log(i)
+</script>
+
+<script type="x" id="ch0105/28">
+  var n = Number(prompt("please input n ="))
+  var a = 1
+  var b = 1
+  var k = n
+
+  for (var i = 1; i < 9; i++) {
+    b = b * 10
+    if (n / b >= 1) {
+      a = a + 1
+    } 
+  }
+  for(var j = 1; j <= a; j++) {
+        console.log(k % 10)
+        k = Math.floor(k / 10)
+    }
+</script>
+
+<script type="x" id="ch0105/29">
+  var n = Number(prompt("please input n ="))
+  var counter = 0,a = 1,sum = 0
+  var k = n
+    for(var i = 1;i < 15;i++) {
+        a = 10 * a
+        if(((n / a) >= 1) || ((n / a) <= -1)) {
+            counter++
+        }
+    }
+    if(n > 0) {
+        for(var j = counter;j >= 0;j--) {        
+            sum = sum + (k % 10) * Math.pow(10,j)
+            k = Math.floor(k / 10)
+        }
+        console.log(sum)
+    }
+    else if (n < 0) {
+        k = -n
+        for(var j = counter;j >= 0;j--) {
+            sum = sum + (k % 10) * Math.pow(10,j)
+            k = Math.floor(k / 10)
+        }
+        console.log(-sum)
+    }
+    else {
+        console.log(0)
+    }
+</script>
+
+<script type="x" id="ch0105/30">
+  var m = Number(prompt("please input m ="))
+  var t = Number(prompt("please input t ="))
+  var a = 1
+  var b = 1
+  var c = 0
+  var k = m
+  if (m % 19 == 0) {
+  for (var i = 1; i <= 6; i++) {
+    b = b * 10
+    if (m / a >= 1) {
+      a = a + 1
+    }
+  }
+  for (var j = 1; j <= a; j++) {
+    if ((k % 10) == 3) {
+      c = c + 1
+    }
+    k = Math.floor(k / 10)
+  }
+  if (c == t) {
+    console.log("YES")
+  }else {
+    console.log("NO")
+  }
+}else {
+  console.log("NO")
+}
+</script>
+
+<script type="x" id="ch0105/31">
+  var n = Number(prompt("please input n ="))
+  var m = Number(prompt("please input m ="))
+  var a = []
+  var b = []
+  for(let i = 0; i < n;i++) {
+    a[i] = false
+  }
+  for(let i = 2;i <= m;i++) {
+    for(let j = 1;j * i <= n;j++) {
+      a[i * j] = !a[i * j]
+    }
+  }
+  for(let i = 1; i < n;i++) {
+    if(a[i] == false) {
+      b.push(i)
+    }
+  }
+  console.log(b.join(","))
+</script>
+
+<script type="x" id="ch0105/32">
+  var n = Number(prompt("please input n ="));
+  var q1 = 1,p1 = 2,sum = 0;
+  var t
+  while(n--) {
+  var a = q1 / p1
+  sum += a
+  t = q1
+  q1 = q1 +p1
+  p1 = t
+  }
+  console.log(sum.toFixed(4))
+</script>
+
+<script type="x" id="ch0105/33">
+  var n = Number(prompt("please input n ="))
+  var sum = 0
+  for( i = 1;i <= n;i++) {
+  sum += (-1)**(i - 1) / i
+}
+console.log(sum.toFixed(4))
+</script>
+
+<script type="" id="ch0105/34">
+  var n = Number(prompt("please input n ="))
+  debugger
+  var sum = 0
+  for(let j = 1;j <= n;j++) {
+  var pro = 1
+  for(let i = 1;i <= j;i++) {
+  pro = pro * i
+  }
+  sum = sum + pro
+}
+console.log(sum)
+</script>
+
+<script type="x" id="ch0105/35">
+  var n = Number(prompt("please input n ="))
+  var sum = 0
+  for(let i = 0;i <= n;i++) {
+  var pro = 1
+  for(let j = 1;j <= i;j++) {
+    pro = pro * j
+  }
+  sum += 1 / pro
+} 
+console.log(sum.toFixed(10))
+</script>
+
+<script type="x" id="ch0105/36">
+  var x = Number(prompt("please input x ="))
+  var n = Number(prompt("please input n ="))
+  var sum = 0
+  for(var i = 0;i <= n;i++) {
+  sum += x ** (i)
+  }  
+console.log(sum.toFixed(2));
+</script>
+
+<script type="x" id="ch0105/37">
+  var M = Number(prompt("please input M ="))
+  var n = Number(prompt("please input n ="))
+  var x = Number(prompt("please input x ="))
+  var m = 0
+  while(m == M || x != 0) {
+  if(m != M) {
+   if(x >= Math.ceil(M / n)) {
+    x = x - Math.ceil(M / n)
+    m = M
+   } else {
+    break
+   }
+  }
+  m = 0
+  n = Math.floor(M / n) + n
+}
+console.log(n)
+</script>
+
+<script type="x" id="ch0105/38">
+  var n = + prompt()
+  for(var i = 0;i < n;i ++){
+      var a = + prompt()
+      for(var j = a;j >= 0;j --){
+          var b = + prompt()
+          if(a == 0){
+              console.log(0)
+              break;
+          }
+          if(j == 0)
+          break;
+          console.log(j * b)
+      }
+  }
+</script>
+
+<script type="x" id="ch0105/39">
+  var n = Number(prompt("please input n ="))
+  var sum = 0
+  for( i = 1;i <= n;i++) {
+    if(!(i % 7 == 0 || Math.floor(i / 10 == 7) || (i % 10 == 7))) {
+      sum += i * i
+    }
+  }
+  console.log(sum)
+</script>
+
+<script type="x" id="ch0105/40">
+  var n = Number(prompt("please input n ="));
+  var count = 0;
+  for(i = 1;i <= n;i++) {
+  if(Math.floor(i / 10) == 1) count++;
+  if(i % 10 == 1) {
+    count++;
+  }
+}  
+console.log(count);
+</script>
+
+<script type="x" id="ch0105/41">
+  var m = + prompt()
+  var n = + prompt()
+  var k = 0
+  for(var i = m;i <= n;i ++){
+      var a = i
+      for(var j = 1;j <= 10;j ++){
+          var b = a
+          if(j == 1){
+              var c = b % 10
+              if(c == 2)
+              k ++
+          }else
+          c = (Math.trunc(b / 10)) % 10
+          if(c == 2)
+          k ++
+          b = Math.trunc(b / 10)
+          if(b < 10)
+          break;
+      }
+  }
+  console.log(k) 
+</script>
+
+<script type="x" id="ch0105/42">
+  var h = Number(prompt("please input h ="))
+  var w = Number(prompt("please input w ="))
+  var x = prompt("please input x =")
+  var style = Number(prompt("please input style ="))
+  var a = []
+  for(var i = 0;i < h ;i++) {
+    a[i] = []
+  }
+  if(style == 0){
+    for(let i = 0;i < w;i++) {
+      a[0][i] = x
+      a[h-1][i] = x
+    }
+    for(let i = 1;i < h - 1;i++) {
+      for(let j = 0;j < w;j++) {
+        a[i][j] = " "
+      }
+      a[i][0] = x
+      a[i][w - 1] = x
+    }
+  }else {
+    for(let i = 0;i < h;i++) {
+      for(let j = 0;j < w;j++) {
+        a[i][j] = x
+      }
+    }
+  }
+  for(let i = 0 ;i < h;i++) {
+    a[i].push("\n")
+  }
+  a[h-1].pop()
+  for(let i = 0 ;i < h;i++) {
+    a[i] = a[i].join("")
+  }
+  var out = a.join("")
+  console.log(out)
+</script>
+
+<script type="x" id="ch0105/43">
+  var n = Number(prompt("please input n ="))
+  for (var i = 2; i < n; i++) {
+    if (n % i == 0) {
+      var c = i
+    }
+    var b = c
+  }
+  console.log(b)
+</script>
+
+<script type="x" id="ch0105/44">
+  var n = Number(prompt("please input n ="))
+  
+  var count = 0
+
+  for(var i = 2; ; i++) {
+    var ret = 0
+    for(var j = i - 1;j > 1;j--) {
+      if (i % j == 0) {
+        ret = 1
+        }
+    }
+    if(ret == 0) {
+      count++
+      if(count == n) {
+        console.log(i)
+        break
+      }
+    }
+  } 
+</script>
+
+<script type="x" id="ch0105/45">
+  var n = Number(prompt("please input n ="));
+  var sum = 0
+  for(var i = 1;i <=n;i++) {
+      n = n - i
+      sum += i * i
+  } 
+  sum = sum + i * n
+  console.log(sum)
+</script>
+
+
+<script type="" id="ch0105/45">
+  var checkPerfectNumber = function(num) {
+    var sum = 1
+    
+    var sqrtnum = Math.floor(Math.sqrt(num))
+    
+    for ( var i=2; i <= sqrtnum; i++) {
+        if (num % i == 0) {
+            sum += i + (num / i)
+        }
+    }
+        if (sqrtnum * sqrtnum == num && sqrtnum !== num) {
+            sum += sqrtnum
+        }
+        if (sqrtnum == num) {
+            sum = 1
+        }
+    return console.log(sum)
+}
+</script>
+
+<!-- <script src="./infiniteLoopDetector.js"></script>
+<script src="./check.js"></script> -->
+
+
+<!-- </body>
+</html> -->
+
+
+
+
+
+
+
+
+

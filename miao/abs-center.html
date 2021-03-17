@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  html, body {
+    width:100%;
+    margin:0;
+  }
+  .a {
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+    position: relative;
+  }
+  .b {
+    width: 40%;
+    height: 20%;
+    margin:auto;
+    background-color:red;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+  }
+  .c {
+    height: 200px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color:red;
+    padding: 100px;
+  }
+  p {
+    width: 200px;
+    font-size:0px;
+		line-height:20px;
+    /* margin: auto; */
+    /* display: inline-block; */
+    text-align: center;
+    background-color:orange;
+    padding: 100px;
+  }
+  p > span {
+    font-size: 14px;
+    display: inline-block;
+    background-color:red;
+    line-height:30px;
+  }
+  .g {
+    background-color: pink;
+  }
+  .a1 {
+    height: 400px;
+    width: 500px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .b1 {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    line-height: 50px;
+    text-align: center;
+  }
+  hr {
+    border: 10px solid white;
+  }
+  </style>
+</head>
+  <body>
+      <div class="a">
+        <div class="b">定位</div>
+    </div>
+    <hr>
+    <div class="c"><span class="g">table</span></div>
+    <hr>
+    <p><span>行内</span></p>
+    <hr>
+    <div class="a1">
+      <main class="b1">flex</main>
+    </div>
+    <hr>
+</body>
+</html>

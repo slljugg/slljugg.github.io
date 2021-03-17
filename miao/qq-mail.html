@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    margin:0;
+    height: 100%;
+  }
+  div {
+    height: 100%;
+  } 
+  div * {
+  font-size: 16px;
+  }
+  header {
+    height: 100px;
+    border-bottom:3px solid;
+    background-color:red;
+  }
+  section {
+    height:calc(100% - 100px);
+    font-size: 0;
+  }
+  aside {
+    height: 100%;
+    width: 200px;
+    border-right:3px solid;
+    background-color:green;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  main {
+    height: 100%;
+    width: calc(100% - 200px);
+    background-color:blue;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  </style>
+  </head>
+  <body>
+    <div>
+      <header></header>
+      <section>
+        <aside></aside>
+        <main></main>
+      </section>
+    </div>
+  </body>
+  </html>

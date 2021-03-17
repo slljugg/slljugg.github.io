@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body {
+    margin:0;
+  }
+  div { 
+    min-width: 500px;
+    height: 50px;
+    background-color:rgb(30,30,30);
+    margin: 0;
+  }
+  ul {
+    /* width: 120px; */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    /* background-color: rgb(30,30,30); */
+  }
+  li:hover > ul >li  {
+    display: block;
+  }
+  ul ul {
+    /* display: none; */
+    position: absolute;
+    top: -8px;
+    left: 100%;
+    white-space: nowrap;
+  }
+  ul.nav > li > ul {
+    top: 100%;
+    left: -8px;
+  }
+  ul ul li {
+    display: none;
+  }
+  ul.nav > li {
+    float: left;
+    margin: 0px 5px;
+    text-align: center;
+  }
+  ul li {
+    padding: 5px;
+    margin: 5px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    background-color:red;
+    border: 3px solid;
+    text-align: left;
+  }
+  ul ul::before {
+    content: '>';
+    position: absolute;
+    left: -1em;
+    top: 10px;
+  }
+  ul.nav > li > ul::before{
+    content: none;
+  }
+  li:hover {
+    background-color:orange;
+  }
+  /* li {
+    background-color:rgb(119, 119, 119); */
+  /* } */
+  </style>
+</head>
+<body>
+<div>
+  <ul class="nav">
+    <li>
+      选项
+      <ul>
+        <li>
+          选项
+          <ul>
+            <li>选项</li>
+            <li>选项</li>
+            <li>选项</li>
+          </ul>
+        </li>
+        <li>
+          选项
+          <ul>
+            <li>选项</li>
+            <li>选项</li>
+            <li>选项</li>
+          </ul>
+        </li>
+        <li>
+          选项
+          <ul>
+            <li>选项</li>
+            <li>选项</li>
+            <li>选项</li>
+          </ul>
+        </li>
+        <li>
+          选项
+          <ul>
+            <li>选项</li>
+            <li>选项</li>
+            <li>选项</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      选项
+      <ul>
+        <li>
+          选项
+          <ul>
+            <li>选项</li>
+            <li>选项</li>
+            <li>选项</li>
+          </ul>
+        </li>
+        <li>选项</li>
+        <li>选项</li>
+        <li>选项</li>
+      </ul>
+    </li>
+    <li>
+      选项
+      <ul>
+        <li>
+          选项
+          <ul>
+            <li>选项</li>
+            <li>选项</li>
+            <li>选项</li>
+          </ul>
+        </li>
+        <li>选项</li>
+        <li>选项</li>
+        <li>选项</li>
+      </ul>
+    </li>
+    <li>
+      选项
+      <ul>
+        <li>
+          选项
+          <ul>
+            <li>选项</li>
+            <li>选项</li>
+            <li>选项</li>
+          </ul>
+        </li>
+        <li>选项</li>
+        <li>选项</li>
+        <li>选项</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
